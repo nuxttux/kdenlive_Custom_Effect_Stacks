@@ -1,0 +1,70 @@
+<effectgroup id="LM Creative - CG" description="Basic color correction effect stack." parentIn="0">
+ <description>Basic color correction effect stack.</description>
+ <effect id="avfilter.fftdnoiz">
+  <property name="av.planes">7</property>
+  <property name="av.next">0</property>
+  <property name="av.prev">0</property>
+  <property name="av.overlap">0.5</property>
+  <property name="av.block">4</property>
+  <property name="av.amount">0.01</property>
+  <property name="av.sigma">1</property>
+ </effect>
+ <effect id="avfilter.unsharp">
+  <property name="av.ca">0</property>
+  <property name="av.cy">5</property>
+  <property name="av.cx">5</property>
+  <property name="av.la">0</property>
+  <property name="av.ly">5</property>
+  <property name="av.lx">5</property>
+ </effect>
+ <effect id="avfilter.noise">
+  <property name="av.c3f">a</property>
+  <property name="av.all_seed">-1</property>
+  <property name="av.c2f">a</property>
+  <property name="av.c0_seed">-1</property>
+  <property name="av.c1_seed">-1</property>
+  <property name="av.c2_seed">-1</property>
+  <property name="av.alls">0</property>
+  <property name="av.c3_seed">-1</property>
+  <property name="av.c0s">0</property>
+  <property name="av.allf">a</property>
+  <property name="av.c0f">a</property>
+  <property name="av.c1s">0</property>
+  <property name="av.c1f">a</property>
+  <property name="av.c2s">0</property>
+  <property name="av.c3s">0</property>
+ </effect>
+ <effect id="avfilter.vibrance">
+  <property name="av.alternate">0</property>
+  <property name="av.blum">0</property>
+  <property name="av.bbal">1</property>
+  <property name="av.glum">0</property>
+  <property name="av.gbal">1</property>
+  <property name="av.rlum">0</property>
+  <property name="av.rbal">1</property>
+  <property name="av.intensity">0</property>
+ </effect>
+ <effect id="frei0r.saturat0r">
+  <property name="Saturation">0=0.125</property>
+ </effect>
+ <effect id="frei0r.tint0r">
+  <property name="Tint amount">0=0</property>
+  <property name="Map white to">0=0x80FF80ff</property>
+  <property name="Map black to">0=0x000000ff</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="gain_g">0=1</property>
+  <property name="gain_b">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_b">0=0</property>
+  <property name="gamma_b">0=1</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
+ </effect>
+ <effect id="avfilter.lut3d">
+  <property name="av.interp">tetrahedral</property>
+  <property name="av.file">/app/share/kdenlive/luts/TEAL_ORANGE.cube</property>
+ </effect>
+</effectgroup>

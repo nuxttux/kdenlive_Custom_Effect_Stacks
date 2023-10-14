@@ -1,0 +1,40 @@
+<effectgroup id="LM Secondary - CHROMA" description="Secondary color selevtion suing Chroma Key." parentIn="0">
+ <description>Secondary color selection mask using Chroma Key.</description>
+ <effect id="mask_start-frei0r.select0r">
+  <property name="filter">frei0r.select0r</property>
+  <property name="filter.Operation">0</property>
+  <property name="filter.Slope">0=0</property>
+  <property name="filter.Delta B / I / I">0=0.2</property>
+  <property name="filter.Delta R / A / Hue">0=0.2</property>
+  <property name="filter.Edge mode">0.9</property>
+  <property name="filter.Delta G / B / Chroma">0=0.2</property>
+  <property name="filter.Subspace shape">0.5</property>
+  <property name="filter.Selection subspace">0</property>
+  <property name="filter.Invert selection">0</property>
+  <property name="filter.Color to select">0=</property>
+ </effect>
+ <effect id="frei0r.select0r">
+  <property name="Operation">0.5</property>
+  <property name="Slope">0=0</property>
+  <property name="Delta B / I / I">0=0.2</property>
+  <property name="Delta R / A / Hue">0=0.2</property>
+  <property name="Subspace shape">0.5</property>
+  <property name="Delta G / B / Chroma">0=0.2</property>
+  <property name="Edge mode">0.9</property>
+  <property name="Selection subspace">0</property>
+  <property name="Invert selection">1</property>
+  <property name="Color to select">0=0x00ff00ff</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="gain_g">0=1</property>
+  <property name="gain_b">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_b">0=0</property>
+  <property name="gamma_b">0=1</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
+ </effect>
+ <effect id="mask_apply"/>
+</effectgroup>

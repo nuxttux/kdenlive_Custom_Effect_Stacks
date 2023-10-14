@@ -1,0 +1,47 @@
+<effectgroup id="LM Secondary - LUMA" description="Secondary color mask using Lumakey." parentIn="0">
+ <description>Secondary color selection mask using Lumakey.</description>
+ <effect id="mask_start-frei0r.select0r">
+  <property name="filter">frei0r.select0r</property>
+  <property name="filter.Operation">0.7</property>
+  <property name="filter.Slope">0=0</property>
+  <property name="filter.Delta B / I / I">0=0.2</property>
+  <property name="filter.Delta R / A / Hue">0=0.2</property>
+  <property name="filter.Edge mode">0.9</property>
+  <property name="filter.Delta G / B / Chroma">0=0.2</property>
+  <property name="filter.Subspace shape">0.5</property>
+  <property name="filter.Selection subspace">0</property>
+  <property name="filter.Invert selection">0</property>
+  <property name="filter.Color to select">0=</property>
+ </effect>
+ <effect id="lumakey">
+  <property name="postlevel">255</property>
+  <property name="slope">0</property>
+  <property name="prelevel">0</property>
+  <property name="threshold">128</property>
+ </effect>
+ <effect id="frei0r.levels">
+  <property name="Histogram position">0.3</property>
+  <property name="Show histogram">0</property>
+  <property name="White output">0=1</property>
+  <property name="Black output">0=0</property>
+  <property name="Gamma">0=0.25</property>
+  <property name="Input white level">0=1</property>
+  <property name="Input black level">0=0</property>
+  <property name="Channel">0.3</property>
+ </effect>
+ <effect id="avfilter.colorlevels">
+  <property name="av.bomin">0</property>
+  <property name="av.bimax">1</property>
+  <property name="av.bimin">0</property>
+  <property name="av.gomax">1</property>
+  <property name="av.gomin">0</property>
+  <property name="av.gimax">1</property>
+  <property name="av.bomax">1</property>
+  <property name="av.gimin">0</property>
+  <property name="av.romax">1</property>
+  <property name="av.romin">0</property>
+  <property name="av.rimax">1</property>
+  <property name="av.rimin">0</property>
+ </effect>
+ <effect id="mask_apply"/>
+</effectgroup>
