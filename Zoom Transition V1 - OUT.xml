@@ -1,0 +1,51 @@
+<effectgroup id="Zoom Transition V1 - OUT" description="Zoom out transition, end of clip." parentIn="40">
+ <description>Zoom out transition, end of clip.</description>
+ <effect id="box_blur">
+  <property name="vradius">00:00:01.667=0;00:00:02.000~=0;00:00:02.458~=7</property>
+  <property name="hradius">00:00:01.667=0;00:00:02.000~=0;00:00:02.458~=24</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">1</property>
+  <property name="compositing">0</property>
+  <property name="rotation">00:00:01.667=0</property>
+  <property name="rect">00:00:01.667=960 540 960 540 1.000000</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">1</property>
+  <property name="compositing">0</property>
+  <property name="rotation">00:00:01.667=0</property>
+  <property name="rect">00:00:01.667=960 540 960 540 1.000000</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">1</property>
+  <property name="compositing">0</property>
+  <property name="rotation">00:00:01.667=0</property>
+  <property name="rect">00:00:01.667=0 0 2553 1436 1.000000</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotate_center">1</property>
+  <property name="distort">1</property>
+  <property name="compositing">0</property>
+  <property name="rotation">00:00:01.667=0;00:00:02.000~=0;00:00:02.458~=0</property>
+  <property name="rect">00:00:01.667=-1920 -1080 5760 3240 1.000000;00:00:02.000~=-1920 -1080 5760 3240 1.000000;00:00:02.458~=0 0 1920 1080 1.000000</property>
+ </effect>
+</effectgroup>
