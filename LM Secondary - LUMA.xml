@@ -1,5 +1,5 @@
 <effectgroup id="LM Secondary - LUMA" description="Secondary color mask using Lumakey." parentIn="0">
- <description>Secondary color selection mask using Lumakey.</description>
+ <description>Secondary color mask using Lumakey.</description>
  <effect id="mask_start-frei0r.select0r">
   <property name="filter">frei0r.select0r</property>
   <property name="filter.Operation">0.7</property>
@@ -18,6 +18,14 @@
   <property name="slope">0</property>
   <property name="prelevel">0</property>
   <property name="threshold">128</property>
+ </effect>
+ <effect id="frei0r.alpha0ps">
+  <property name="Shrink/Grow/Blur amount">0=0.5</property>
+  <property name="Threshold">0=0.5</property>
+  <property name="Invert">0</property>
+  <property name="Operation">0</property>
+  <property name="Display input alpha">0</property>
+  <property name="Display">0</property>
  </effect>
  <effect id="frei0r.levels">
   <property name="Histogram position">0.3</property>
