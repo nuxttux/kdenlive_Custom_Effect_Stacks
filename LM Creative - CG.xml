@@ -1,16 +1,22 @@
-<effectgroup id="LM Creative - CG" description="Color Grading Effect Stack" parentIn="0">
- <description>Color Grading Effect Stack</description>
- <effect id="avfilter.colorbalance">
-  <property name="av.pl">0</property>
-  <property name="av.gh">0</property>
-  <property name="av.rh">0</property>
-  <property name="av.bm">0</property>
-  <property name="av.gm">0</property>
-  <property name="av.rm">0</property>
-  <property name="av.bs">0</property>
-  <property name="av.gs">0</property>
-  <property name="av.bh">0</property>
-  <property name="av.rs">0</property>
+<effectgroup id="LM Creattive - CG" description="Kdenlive basic Color Grading effect stack.&#xa;YouTube tutorials @nuxttux." parentIn="0">
+ <description>Kdenlive basic Color Grading effect stack.
+YouTube tutorials @nuxttux.</description>
+ <effect id="avfilter.unsharp">
+  <property name="av.ca">0</property>
+  <property name="av.cy">5</property>
+  <property name="av.cx">5</property>
+  <property name="av.la">0</property>
+  <property name="av.ly">5</property>
+  <property name="av.lx">5</property>
+ </effect>
+ <effect id="avfilter.fftdnoiz">
+  <property name="av.planes">7</property>
+  <property name="av.next">0</property>
+  <property name="av.prev">0</property>
+  <property name="av.overlap">0.5</property>
+  <property name="av.block">4</property>
+  <property name="av.amount">0.01</property>
+  <property name="av.sigma">1</property>
  </effect>
  <effect id="avfilter.eq">
   <property name="av.gamma_b">1</property>
@@ -21,6 +27,25 @@
   <property name="av.brightness">0</property>
   <property name="av.gamma_weight">1</property>
   <property name="av.contrast">1</property>
+ </effect>
+ <effect id="frei0r.saturat0r">
+  <property name="Saturation">0=0.125</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="gain_g">0=1</property>
+  <property name="gain_b">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_b">0=0</property>
+  <property name="gamma_b">0=1</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
+ </effect>
+ <effect id="frei0r.tint0r">
+  <property name="Tint amount">0=0</property>
+  <property name="Map white to">0=0xffffffff</property>
+  <property name="Map black to">0=0x000000ff</property>
  </effect>
  <effect id="frei0r.curves">
   <property name="2">0.3</property>
@@ -40,39 +65,9 @@
   <property name="13">0</property>
   <property name="14">0</property>
  </effect>
- <effect id="lift_gamma_gain">
-  <property name="gain_g">0=1</property>
-  <property name="gain_b">0=1</property>
-  <property name="gamma_g">0=1</property>
-  <property name="gamma_r">0=1</property>
-  <property name="gain_r">0=1</property>
-  <property name="lift_b">0=0</property>
-  <property name="gamma_b">0=1</property>
-  <property name="lift_g">0=0</property>
-  <property name="lift_r">0=0</property>
- </effect>
- <effect id="frei0r.tint0r">
-  <property name="Tint amount">0=0</property>
-  <property name="Map white to">0=0xffffffff</property>
-  <property name="Map black to">0=0x000000ff</property>
- </effect>
- <effect id="frei0r.sopsat">
-  <property name="aPower">0=0.05</property>
-  <property name="bPower">0=0.05</property>
-  <property name="aOffset">0=0.5</property>
-  <property name="gPower">0=0.05</property>
-  <property name="bOffset">0=0.5</property>
-  <property name="rOffset">0=0.5</property>
-  <property name="gOffset">0=0.5</property>
-  <property name="aSlope">0=0.05</property>
-  <property name="bSlope">0=0.05</property>
-  <property name="saturation">0=0.1</property>
-  <property name="rPower">0=0.05</property>
-  <property name="gSlope">0=0.05</property>
-  <property name="rSlope">0=0.05</property>
- </effect>
- <effect id="avfilter.lut3d">
-  <property name="av.interp">tetrahedral</property>
-  <property name="av.file">/app/share/kdenlive/luts/TEAL_ORANGE.cube</property>
+ <effect id="frei0r.bezier_curves">
+  <property name="5">-1;-1#0;0#0.1;0.1|0.9;0.9#1;1#2;2</property>
+  <property name="4">1</property>
+  <property name="0">0.5</property>
  </effect>
 </effectgroup>
