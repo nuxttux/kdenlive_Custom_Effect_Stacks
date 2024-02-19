@@ -1,5 +1,5 @@
-<effectgroup id="LM Secondary - CHROMA" description="Secondary color selevtion suing Chroma Key." parentIn="0">
- <description>Secondary color selection mask using Chroma Key.</description>
+<effectgroup id="LM Secondary - CHROMA" description="Secondary color selection using Chroma Key" parentIn="0">
+ <description>Secondary color selection using Chroma Key</description>
  <effect id="mask_start-frei0r.select0r">
   <property name="filter">frei0r.select0r</property>
   <property name="filter.Operation">0</property>
@@ -24,6 +24,12 @@
   <property name="Selection subspace">0</property>
   <property name="Invert selection">1</property>
   <property name="Color to select">0=0x00ff00ff</property>
+ </effect>
+ <effect id="avfilter.gblur">
+  <property name="av.sigmaV">-1</property>
+  <property name="av.planes">8</property>
+  <property name="av.steps">1</property>
+  <property name="av.sigma">0</property>
  </effect>
  <effect id="lift_gamma_gain">
   <property name="gain_g">0=1</property>
