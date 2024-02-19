@@ -15,12 +15,20 @@
  </effect>
  <effect id="avfilter.gblur">
   <property name="av.sigmaV">-1</property>
-  <property name="av.planes">7</property>
+  <property name="av.planes">8</property>
   <property name="av.steps">1</property>
   <property name="av.sigma">0</property>
  </effect>
  <effect id="frei0r.transparency">
   <property name="0">0=1</property>
+ </effect>
+ <effect id="frei0r.alpha0ps">
+  <property name="Shrink/Grow/Blur amount">0=0.5</property>
+  <property name="Threshold">0=0.5</property>
+  <property name="Invert">0</property>
+  <property name="Operation">0</property>
+  <property name="Display input alpha">0</property>
+  <property name="Display">0</property>
  </effect>
  <effect id="lift_gamma_gain">
   <property name="gain_g">0=1</property>
