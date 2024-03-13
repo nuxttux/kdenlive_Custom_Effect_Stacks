@@ -34,9 +34,9 @@
   <property name="11">0</property>
  </effect>
  <effect id="avfilter.lut3d">
+  <property name="disable">1</property>
   <property name="kdenlive:collapsed">1</property>
   <property name="av.interp">tetrahedral</property>
-  <property name="disable">1</property>
   <property name="av.file">/app/share/kdenlive/luts/CINEMATIC.cube</property>
  </effect>
  <effect id="mask_apply">
@@ -45,13 +45,13 @@
  <effect id="lift_gamma_gain">
   <property name="gain_b">0=1</property>
   <property name="gain_g">0=1</property>
-  <property name="gamma_b">0=0.666667</property>
-  <property name="gamma_r">0=0.666667</property>
-  <property name="gamma_g">0=0.666667</property>
-  <property name="lift_b">0=0.049638</property>
+  <property name="gamma_b">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="lift_b">0=0</property>
   <property name="gain_r">0=1</property>
-  <property name="lift_g">0=0.049638</property>
-  <property name="lift_r">0=0.049638</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
  </effect>
  <effect id="avfilter.unsharp">
   <property name="kdenlive:collapsed">1</property>
@@ -78,6 +78,6 @@
   <property name="av.c3s">0</property>
   <property name="av.c1f">a</property>
   <property name="av.c0_seed">-1</property>
-  <property name="av.allf">t</property>
+  <property name="av.allf">a</property>
  </effect>
 </effectgroup>
