@@ -1,17 +1,17 @@
-<effectgroup id="Zoom Transition V1 - IN" description="Zoom transition, IN. Beginning of clip." parentIn="0">
+<effectgroup description="Zoom transition, IN. Beginning of clip." id="Zoom Transition - IN" parentIn="0">
  <description>Zoom transition, IN. Beginning of clip.</description>
  <effect id="qtblend">
-  <property name="rotate_center">1</property>
   <property name="distort">0</property>
+  <property name="rotation">0~=0;10=0</property>
+  <property name="rotate_center">1</property>
   <property name="compositing">0</property>
-  <property name="rotation">00:00:00.000~=0;00:00:00.250~=0</property>
-  <property name="rect">00:00:00.000~=-400 -58 2586 1455 1.000000;00:00:00.250~=0 0 1920 1080 1.000000</property>
+  <property name="rect">0~=-336 -189 2592 1458 1.000000;10=0 0 1920 1080 1.000000</property>
  </effect>
  <effect id="frei0r.lenscorrection">
-  <property name="brightness">00:00:00.000~=0;00:00:00.250=0;00:00:01.958~=0;00:00:02.458~=0</property>
-  <property name="correctionnearedges">00:00:00.000~=0.253;00:00:00.250=0.50064;00:00:01.958~=0.5;00:00:02.458~=0.41</property>
-  <property name="correctionnearcenter">00:00:00.000~=0.081;00:00:00.250=0.502829;00:00:01.958~=0.5;00:00:02.458~=0.102</property>
-  <property name="ycenter">00:00:00.000~=0.5;00:00:00.250=0.5;00:00:01.958~=0.5;00:00:02.458~=0.5</property>
-  <property name="xcenter">00:00:00.000~=0.5;00:00:00.250=0.5;00:00:01.958~=0.5;00:00:02.458~=0.5</property>
+  <property name="brightness">0~=0;10=0</property>
+  <property name="correctionnearedges">0~=0.253;10=0.50064</property>
+  <property name="correctionnearcenter">0~=0.081;10=0.502829</property>
+  <property name="ycenter">0~=0.5;10=0.5</property>
+  <property name="xcenter">0~=0.5;10=0.5</property>
  </effect>
 </effectgroup>
