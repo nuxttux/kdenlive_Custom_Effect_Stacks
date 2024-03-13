@@ -1,5 +1,15 @@
-<effectgroup description="LUT base effect stack." id="LM Creative - LUT" parentIn="0">
- <description>LUT base effect stack.</description>
+<effectgroup description="Color Grading with LUT Effect Stack" id="LM Creative - LUT" parentIn="0">
+ <description>Color Grading with LUT Effect Stack</description>
+ <effect id="frei0r.colgate">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Color Temperature">0=0.433</property>
+  <property name="Neutral Color">0=0x7f7f7fff</property>
+ </effect>
+ <effect id="frei0r.balanc0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Green Tint">0=0.1333</property>
+  <property name="Neutral Color">0=0xffffffff</property>
+ </effect>
  <effect id="avfilter.eq">
   <property name="av.gamma_weight">1</property>
   <property name="av.gamma_g">1</property>
@@ -12,10 +22,12 @@
  </effect>
  <effect id="mask_start-frei0r.select0r">
   <property name="filter">frei0r.select0r</property>
+  <property name="kdenlive:collapsed">1</property>
   <property name="filter.Delta B / I / I">0=0.2</property>
   <property name="filter.Delta G / B / Chroma">0=0.2</property>
   <property name="filter.Edge mode">0.9</property>
   <property name="filter.Subspace shape">0.5</property>
+  <property name="disable">1</property>
   <property name="filter.Selection subspace">0</property>
   <property name="filter.Delta R / A / Hue">0=0.2</property>
   <property name="filter.Invert selection">0</property>
@@ -24,11 +36,54 @@
   <property name="filter.Color to select">0=</property>
  </effect>
  <effect id="frei0r.transparency">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="disable">1</property>
   <property name="0">0=1</property>
  </effect>
  <effect id="avfilter.lut3d">
+  <property name="kdenlive:collapsed">1</property>
   <property name="av.interp">tetrahedral</property>
   <property name="av.file">/app/share/kdenlive/luts/CINEMATIC.cube</property>
  </effect>
- <effect id="mask_apply"/>
+ <effect id="mask_apply">
+  <property name="disable">1</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="gain_b">0=1</property>
+  <property name="gain_g">0=1</property>
+  <property name="gamma_b">0=0.666667</property>
+  <property name="gamma_r">0=0.666667</property>
+  <property name="gamma_g">0=0.666667</property>
+  <property name="lift_b">0=0.049638</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_g">0=0.049638</property>
+  <property name="lift_r">0=0.049638</property>
+ </effect>
+ <effect id="avfilter.unsharp">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.ca">0</property>
+  <property name="av.cy">5</property>
+  <property name="av.cx">5</property>
+  <property name="av.la">0</property>
+  <property name="av.ly">5</property>
+  <property name="av.lx">5</property>
+ </effect>
+ <effect id="avfilter.noise">
+  <property name="av.c3f">a</property>
+  <property name="av.all_seed">-1</property>
+  <property name="av.c3_seed">-1</property>
+  <property name="av.c1_seed">-1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.c2f">a</property>
+  <property name="av.alls">0</property>
+  <property name="av.c0s">0</property>
+  <property name="av.c0f">a</property>
+  <property name="av.c2_seed">-1</property>
+  <property name="av.c1s">0</property>
+  <property name="av.c2s">0</property>
+  <property name="av.c3s">0</property>
+  <property name="av.c1f">a</property>
+  <property name="av.c0_seed">-1</property>
+  <property name="av.allf">t</property>
+ </effect>
 </effectgroup>
