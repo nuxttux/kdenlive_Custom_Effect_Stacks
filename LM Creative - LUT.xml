@@ -1,25 +1,5 @@
-<effectgroup description="Color Grading with LUT Effect Stack" id="LM Creative - LUT" parentIn="0">
- <description>Color Grading with LUT Effect Stack</description>
- <effect id="frei0r.colgate">
-  <property name="kdenlive:collapsed">1</property>
-  <property name="Color Temperature">0=0.433</property>
-  <property name="Neutral Color">0=0x7f7f7fff</property>
- </effect>
- <effect id="frei0r.balanc0r">
-  <property name="kdenlive:collapsed">1</property>
-  <property name="Green Tint">0=0.1333</property>
-  <property name="Neutral Color">0=0xffffffff</property>
- </effect>
- <effect id="avfilter.eq">
-  <property name="av.gamma_weight">1</property>
-  <property name="av.gamma_g">1</property>
-  <property name="av.gamma_b">1</property>
-  <property name="av.gamma_r">1</property>
-  <property name="av.gamma">1</property>
-  <property name="av.saturation">1</property>
-  <property name="av.brightness">0</property>
-  <property name="av.contrast">1</property>
- </effect>
+<effectgroup description="LUT base effect stack. Color Grading." id="LM Creative - LUT" parentIn="0">
+ <description>LUT base effect stack. Color Grading.</description>
  <effect id="mask_start-frei0r.select0r">
   <property name="filter">frei0r.select0r</property>
   <property name="kdenlive:collapsed">1</property>
@@ -27,7 +7,7 @@
   <property name="filter.Delta G / B / Chroma">0=0.2</property>
   <property name="filter.Edge mode">0.9</property>
   <property name="filter.Subspace shape">0.5</property>
-  <property name="disable">1</property>
+  <property name="disable">0</property>
   <property name="filter.Selection subspace">0</property>
   <property name="filter.Delta R / A / Hue">0=0.2</property>
   <property name="filter.Invert selection">0</property>
@@ -35,18 +15,32 @@
   <property name="filter.Slope">0=0</property>
   <property name="filter.Color to select">0=</property>
  </effect>
- <effect id="frei0r.transparency">
-  <property name="kdenlive:collapsed">1</property>
-  <property name="disable">1</property>
-  <property name="0">0=1</property>
+ <effect id="frei0r.curves">
+  <property name="2">0.3</property>
+  <property name="1">0</property>
+  <property name="15">0</property>
+  <property name="Channel">0.3</property>
+  <property name="4">1</property>
+  <property name="9">1</property>
+  <property name="14">0</property>
+  <property name="3">0.2</property>
+  <property name="6">0</property>
+  <property name="7">0</property>
+  <property name="12">0</property>
+  <property name="8">1</property>
+  <property name="13">0</property>
+  <property name="kdenlive:curve">0/0;1/1</property>
+  <property name="10">0</property>
+  <property name="11">0</property>
  </effect>
  <effect id="avfilter.lut3d">
   <property name="kdenlive:collapsed">1</property>
   <property name="av.interp">tetrahedral</property>
+  <property name="disable">1</property>
   <property name="av.file">/app/share/kdenlive/luts/CINEMATIC.cube</property>
  </effect>
  <effect id="mask_apply">
-  <property name="disable">1</property>
+  <property name="disable">0</property>
  </effect>
  <effect id="lift_gamma_gain">
   <property name="gain_b">0=1</property>
