@@ -78,6 +78,6 @@
   <property name="av.c3s">0</property>
   <property name="av.c1f">a</property>
   <property name="av.c0_seed">-1</property>
-  <property name="av.allf">a</property>
+  <property name="av.allf">t</property>
  </effect>
 </effectgroup>
