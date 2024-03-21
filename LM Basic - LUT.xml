@@ -1,0 +1,25 @@
+<effectgroup description="LUT base Color Correction." id="LM Basic - LUT" parentIn="0">
+ <description>LUT base Color Correction.</description>
+ <effect id="frei0r.colgate">
+  <property name="Color Temperature">0=0.433</property>
+  <property name="Neutral Color">0=0x7f7f7fff</property>
+ </effect>
+ <effect id="frei0r.balanc0r">
+  <property name="Green Tint">0=0.1333</property>
+  <property name="Neutral Color">0=0xffffffff</property>
+ </effect>
+ <effect id="avfilter.eq">
+  <property name="av.gamma_weight">1</property>
+  <property name="av.gamma_g">1</property>
+  <property name="av.gamma_b">1</property>
+  <property name="av.gamma_r">1</property>
+  <property name="av.gamma">1</property>
+  <property name="av.saturation">1</property>
+  <property name="av.brightness">0</property>
+  <property name="av.contrast">1</property>
+ </effect>
+ <effect id="avfilter.lut3d">
+  <property name="av.interp">tetrahedral</property>
+  <property name="av.file">/app/share/kdenlive/luts/CINEMATIC.cube</property>
+ </effect>
+</effectgroup>
