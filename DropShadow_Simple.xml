@@ -1,0 +1,21 @@
+<effectgroup description="Simple dropshadow" id="DropShadow" parentIn="0">
+ <description>Simple dropshadow</description>
+ <effect id="mask_start-rotoscoping">
+  <property name="filter">rotoscoping</property>
+  <property name="filter.feather_passes">1</property>
+  <property name="filter.feather">0</property>
+  <property name="filter.invert">0</property>
+  <property name="filter.alpha_operation">clear</property>
+  <property name="filter.mode">alpha</property>
+  <property name="filter.spline"></property>
+ </effect>
+ <effect id="frei0r.alpha0ps">
+  <property name="Threshold">0=0.5</property>
+  <property name="Operation">1</property>
+  <property name="Invert">0</property>
+  <property name="Display input alpha">0</property>
+  <property name="Shrink/Grow/Blur amount">0=0.5</property>
+  <property name="Display">0</property>
+ </effect>
+ <effect id="mask_apply"/>
+</effectgroup>
