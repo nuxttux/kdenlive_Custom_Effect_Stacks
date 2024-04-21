@@ -1,0 +1,18 @@
+<effectgroup description="Simple zoom in transition with lens distortion. Cut 8 frames to apply effect." id="Zoom In Transition v2" parentIn="383">
+ <description>Simple zoom in transition with lens distortion. Cut 8 frames to apply effect.</description>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">383$=0 0 1920 1080;390=-2880 -1620 7680 4320</property>
+ </effect>
+ <effect id="frei0r.lenscorrection">
+  <property name="brightness">383$=0;386=0;390=0</property>
+  <property name="correctionnearedges">383$=0.5;386=0.376;390=0.168</property>
+  <property name="correctionnearcenter">383$=0.5;386=0.296;390=0.413</property>
+  <property name="ycenter">383$=0.5;386=0.5;390=0.5</property>
+  <property name="xcenter">383$=0.5;386=0.5;390=0.5</property>
+ </effect>
+</effectgroup>

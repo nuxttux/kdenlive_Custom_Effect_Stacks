@@ -1,0 +1,64 @@
+<effectgroup description="Zoom out transition - version 2. Cut 8 frames to apply." id="Zoom Transition - Out v2" parentIn="391">
+ <description>Zoom out transition - version 2. Cut 8 frames to apply.</description>
+ <effect id="avfilter.gblur">
+  <property name="av.sigmaV">391$=0;398=12</property>
+  <property name="av.planes">7</property>
+  <property name="av.steps">2</property>
+  <property name="av.sigma">391$=0;398=12</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">391=960 540 960 540</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">391=960 540 960 540</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">391=0 0 2553 1436</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="distort">0</property>
+  <property name="rotation">391$=0;398=0</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+  <property name="rect">391$=-1920 -1080 5760 3240 1.000000;398=0 0 1920 1080 1.000000</property>
+ </effect>
+ <effect id="frei0r.lenscorrection">
+  <property name="brightness">391$=0;398=0</property>
+  <property name="correctionnearedges">391$=0.5;398=0.307</property>
+  <property name="correctionnearcenter">391$=0.5;398=0.506</property>
+  <property name="ycenter">391$=0.5;398=0.5</property>
+  <property name="xcenter">391$=0.5;398=0.5</property>
+ </effect>
+</effectgroup>
