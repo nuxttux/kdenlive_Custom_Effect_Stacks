@@ -1,1 +1,1 @@
-
+Tile zoom in and out transitions. Cut a minimum of 8 framesto apply effect.
