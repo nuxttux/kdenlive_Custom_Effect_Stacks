@@ -1,0 +1,17 @@
+<effectgroup description="Zoom out transition clean plate. Duplicate clip and cut 8 frames to apply." id="Zoom Transition - Out Clean Plate" parentIn="60">
+ <description>Zoom out transition clean plate. Duplicate clip and cut 8 frames to apply.</description>
+ <effect id="avfilter.gblur">
+  <property name="av.sigmaV">60$=0;67=12</property>
+  <property name="av.planes">7</property>
+  <property name="av.steps">2</property>
+  <property name="av.sigma">60$=0;67=12</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">60$=0 0 1920 1080;67=643 362 633 356</property>
+ </effect>
+</effectgroup>
