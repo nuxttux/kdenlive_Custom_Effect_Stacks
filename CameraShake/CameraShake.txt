@@ -1,1 +1,1 @@
-
+Camera shake effect. "R" stands for Rotation. They last two minutes and can be extended by copying keyframes and importing them back into the same effect, and adjust Time Offset.
