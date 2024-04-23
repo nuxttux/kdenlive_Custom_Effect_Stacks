@@ -1,2 +1,2 @@
 
-Simple zoom in and out. Cut a minimum of 8 frames to apply effect.
+Simple zoom in and out transition. Cut a minimum of 8 frames to apply effect.
