@@ -1,0 +1,27 @@
+<effectgroup description="Simple zoom in transition with lens distortion. Cut 12 frames to apply effect." id="Zoom In Transition 12f" parentIn="143">
+ <description>Simple zoom in transition with lens distortion. Cut 12 frames to apply effect.</description>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">143g=0 0 1920 1080;154=-2880 -1620 7680 4320</property>
+ </effect>
+ <effect id="frei0r.lenscorrection">
+  <property name="brightness">143g=0;154=0</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="correctionnearedges">143g=0.5;154=0.168</property>
+  <property name="correctionnearcenter">143g=0.5;154=0.413</property>
+  <property name="ycenter">143g=0.5;154=0.5</property>
+  <property name="xcenter">143g=0.5;154=0.5</property>
+ </effect>
+ <effect id="avfilter.gblur">
+  <property name="av.sigmaV">143g=0;154=20</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.planes">7</property>
+  <property name="av.steps">2</property>
+  <property name="av.sigma">143g=0;154=20</property>
+ </effect>
+</effectgroup>
