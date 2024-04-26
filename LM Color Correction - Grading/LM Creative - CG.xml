@@ -1,0 +1,76 @@
+<effectgroup id="LM Creattive - CG" description="Kdenlive basic Color Grading effect stack.&#xa;YouTube tutorials @nuxttux." parentIn="0">
+ <description>Kdenlive basic Color Grading effect stack.
+YouTube tutorials @nuxttux.</description>
+ <effect id="avfilter.unsharp">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.ca">0</property>
+  <property name="av.cy">5</property>
+  <property name="av.cx">5</property>
+  <property name="av.la">0</property>
+  <property name="av.ly">5</property>
+  <property name="av.lx">5</property>
+ </effect>
+ <effect id="frei0r.denoise_hqdn3d">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="1">0.06</property>
+  <property name="0">0.04</property>
+ </effect>
+ <effect id="avfilter.eq">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.gamma_b">1</property>
+  <property name="av.gamma_g">1</property>
+  <property name="av.gamma">1</property>
+  <property name="av.gamma_r">1</property>
+  <property name="av.saturation">1</property>
+  <property name="av.brightness">0</property>
+  <property name="av.gamma_weight">1</property>
+  <property name="av.contrast">1</property>
+ </effect>
+ <effect id="frei0r.saturat0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Saturation">0=0.125</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="gain_g">0=1</property>
+  <property name="gain_b">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_b">0=0</property>
+  <property name="gamma_b">0=1</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
+ </effect>
+ <effect id="frei0r.tint0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Tint amount">0=0</property>
+  <property name="Map white to">0=0xffffffff</property>
+  <property name="Map black to">0=0x000000ff</property>
+ </effect>
+ <effect id="frei0r.curves">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="2">0.3</property>
+  <property name="1">0</property>
+  <property name="15">0</property>
+  <property name="Channel">0.5</property>
+  <property name="4">1</property>
+  <property name="kdenlive:curve">0/0;1/1</property>
+  <property name="3">0.2</property>
+  <property name="6">0</property>
+  <property name="7">0</property>
+  <property name="8">1</property>
+  <property name="9">1</property>
+  <property name="10">0</property>
+  <property name="11">0</property>
+  <property name="12">0</property>
+  <property name="13">0</property>
+  <property name="14">0</property>
+ </effect>
+ <effect id="frei0r.bezier_curves">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="5">-1;-1#0;0#0.1;0.1|0.9;0.9#1;1#2;2</property>
+  <property name="4">1</property>
+  <property name="0">0.5</property>
+ </effect>
+</effectgroup>

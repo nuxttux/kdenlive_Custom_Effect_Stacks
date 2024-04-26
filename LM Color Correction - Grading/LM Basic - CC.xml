@@ -1,0 +1,50 @@
+<effectgroup id="LM Basic - CC" description="Custom Effect Stack(s) for Kdenlive.&#xa;YouTube tutorials @nuxttux." parentIn="0">
+ <description>Custom Effect Stack(s) for Kdenlive.
+YouTube tutorials @nuxttux.</description>
+ <effect id="frei0r.colgate">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Color Temperature">0=0.433</property>
+  <property name="Neutral Color">0=0x7f7f7fff</property>
+ </effect>
+ <effect id="frei0r.balanc0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Green Tint">0=0.1333</property>
+  <property name="Neutral Color">0=0xffffffff</property>
+ </effect>
+ <effect id="avfilter.exposure">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.black">0=0</property>
+  <property name="av.exposure">0=0</property>
+ </effect>
+ <effect id="frei0r.contrast0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Contrast">0=0.5</property>
+ </effect>
+ <effect id="lift_gamma_gain">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="gain_g">0=1</property>
+  <property name="gain_b">0=1</property>
+  <property name="gamma_g">0=1</property>
+  <property name="gamma_r">0=1</property>
+  <property name="gain_r">0=1</property>
+  <property name="lift_b">0=0</property>
+  <property name="gamma_b">0=1</property>
+  <property name="lift_g">0=0</property>
+  <property name="lift_r">0=0</property>
+ </effect>
+ <effect id="frei0r.levels">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Histogram position">0.3</property>
+  <property name="Show histogram">0</property>
+  <property name="White output">0=1</property>
+  <property name="Black output">0=0</property>
+  <property name="Gamma">0=0.25</property>
+  <property name="Input white level">0=1</property>
+  <property name="Input black level">0=0</property>
+  <property name="Channel">0.3</property>
+ </effect>
+ <effect id="frei0r.saturat0r">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="Saturation">0=0.125</property>
+ </effect>
+</effectgroup>
