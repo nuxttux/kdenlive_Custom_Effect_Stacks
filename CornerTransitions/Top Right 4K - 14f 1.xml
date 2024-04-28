@@ -1,0 +1,31 @@
+<effectgroup description="Top right 4k transition. Cut 14 frames to apply effect. Part 1" id="Top Right 4K - 14f 1" parentIn="250">
+ <description>Top right 4k transition. Cut 14 frames to apply effect. Part 1</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="columns">250=0.105</property>
+  <property name="rows">250=0.105</property>
+ </effect>
+ <effect id="avfilter.fillborders">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.color">black</property>
+  <property name="av.mode">mirror</property>
+  <property name="av.bottom">720</property>
+  <property name="av.top">720</property>
+  <property name="av.right">1300</property>
+  <property name="av.left">1300</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="distort">0</property>
+  <property name="rotation">250p=0;263=0</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+  <property name="rect">250p=-3840 -2160 11520 6480 1.000000;263=-7680 0 11520 6480 1.000000</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="vradius">250p=0;263=39</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">250p=0;263=75</property>
+ </effect>
+</effectgroup>
