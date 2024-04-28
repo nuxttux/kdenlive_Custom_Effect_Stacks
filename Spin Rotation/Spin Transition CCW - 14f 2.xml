@@ -1,0 +1,64 @@
+<effectgroup description="Clockwise spin transition, Cut 14 frames to apply effect. Part 2" id="Spin Transition CCW - 14f 2" parentIn="131">
+ <description>Clockwise spin transition, Cut 14 frames to apply effect. Part 2</description>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">131=960 540 960 540</property>
+ </effect>
+ <effect id="mirror">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">131=960 540 960 540</property>
+ </effect>
+ <effect id="mirror">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="reverse">0</property>
+  <property name="mirror">horizontal</property>
+ </effect>
+ <effect id="mirror">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="reverse">0</property>
+  <property name="mirror">vertical</property>
+ </effect>
+ <effect id="pan_zoom">
+  <property name="transition.repeat_off">1</property>
+  <property name="producer.resource">0x00000000</property>
+  <property name="use_normalised">1</property>
+  <property name="transition.distort">1</property>
+  <property name="kdenlive:collapsed">1</property>
+  <property name="transition.mirror_off">1</property>
+  <property name="transition.rect">131=0 0 2553 1436</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="distort">1</property>
+  <property name="rotation">131h=180;144=0</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+  <property name="rect">131h=-1920 -1080 5760 3240 1.000000;144=-1920 -1080 5760 3240 1.000000</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="vradius">131h=20;144=0</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">131h=50;144=0</property>
+ </effect>
+</effectgroup>

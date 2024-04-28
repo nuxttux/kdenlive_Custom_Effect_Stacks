@@ -1,0 +1,31 @@
+<effectgroup description="4K Clockwise spin transition, Cut 14 frames to apply effect. Part 1" id="Spin Transition CW 4K - 14f 1" parentIn="278">
+ <description>4K Clockwise spin transition, Cut 14 frames to apply effect. Part 1</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="columns">278=0.105</property>
+  <property name="rows">278=0.105</property>
+ </effect>
+ <effect id="avfilter.fillborders">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.color">black</property>
+  <property name="av.mode">mirror</property>
+  <property name="av.bottom">721</property>
+  <property name="av.top">721</property>
+  <property name="av.right">1281</property>
+  <property name="av.left">1282</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="distort">0</property>
+  <property name="rotation">278p=0;291=180</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+  <property name="rect">278p=-3840 -2160 11520 6480 1.000000;291=-3840 -2160 11520 6480 1.000000</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="vradius">278p=0;291=39</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">278p=0;291=75</property>
+ </effect>
+</effectgroup>
