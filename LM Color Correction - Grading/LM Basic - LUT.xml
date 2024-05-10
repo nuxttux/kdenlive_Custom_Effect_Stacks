@@ -23,6 +23,5 @@
  <effect id="avfilter.lut3d">
   <property name="kdenlive:collapsed">1</property>
   <property name="av.interp">tetrahedral</property>
-  <property name="av.file">/app/share/kdenlive/luts/CINEMATIC.cube</property>
  </effect>
 </effectgroup>
