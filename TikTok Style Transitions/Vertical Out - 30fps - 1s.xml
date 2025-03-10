@@ -1,0 +1,30 @@
+<effectgroup description="Vertical, Zoom-out transition with flash, 30fps, 1s." id="Vertical Out - 30fps / 1s" parentIn="130">
+ <description>Vertical, Zoom-out transition with flash, 30fps, 1s. 9:16 - 1080*1920.</description>
+ <effect id="avfilter.dblur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.planes">130h=15;137=15;153g=15;160=15</property>
+  <property name="av.radius">130h=90;137=0;153g=0;160=90</property>
+  <property name="av.angle">130h=90;137=90;153g=90;160=90</property>
+ </effect>
+ <effect id="avfilter.exposure">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.black">130h=0;145g=0;160=0</property>
+  <property name="av.exposure">130h=0.7;145g=0;160=0.7</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="rotation">130h=0;160=0</property>
+  <property name="distort">0</property>
+  <property name="rect">130h=-108 -192 1296 2304 1.000000;160=0 0 1080 1920 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="rotation">130=0;144g=0;160=0</property>
+  <property name="distort">0</property>
+  <property name="rect">130=-162 -288 1404 2496 1.000000;144g=-162 -288 1404 2496 1.000000;160=0 0 1080 1920 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+</effectgroup>
