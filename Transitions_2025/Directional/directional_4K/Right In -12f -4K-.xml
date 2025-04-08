@@ -1,0 +1,22 @@
+<effectgroup description="Right scroll transition, IN - 12 frames 4K" id="Right In -12f [4K]" parentIn="108">
+ <description>Right scroll transition, IN - 12 frames 4K</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="columns">108=0.105</property>
+  <property name="rows">108=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="rotation">108g=0;119=0</property>
+  <property name="distort">0</property>
+  <property name="rect">108g=-3847 -2164 11520 6480 1.000000;119=-7680 -2160 11520 6480 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="avfilter.dblur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="av.planes">108$=15;119=15</property>
+  <property name="av.radius">108$=0;119=120</property>
+  <property name="av.angle">108$=0;119=0</property>
+ </effect>
+</effectgroup>
