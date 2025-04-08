@@ -1,0 +1,22 @@
+<effectgroup description="Clockwise spin transition, OUT - 12 frames 4K" id="Spin CW -OUT - 12f [4K]" parentIn="480">
+ <description>Clockwise spin transition, OUT - 12 frames 4K</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="columns">480=0.105</property>
+  <property name="rows">480=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="rotation">480h=180;491=360</property>
+  <property name="distort">1</property>
+  <property name="rect">480h=-3847 -2164 11520 6480 1.000000;491=-3866 -2174 11558 6501 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="vradius">480g=60;491=0</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">480g=60;491=0</property>
+ </effect>
+</effectgroup>
