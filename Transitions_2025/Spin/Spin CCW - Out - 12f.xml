@@ -1,0 +1,24 @@
+<effectgroup description="Counter-Clockwise spin transition, OUT - 12f" id="Spin CCW - Out - 12f" parentIn="524">
+ <description>Counter-Clockwise spin transition, OUT - 12f</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed"></property>
+  <property name="kdenlive:collapsed"></property>
+  <property name="columns">524=0.105</property>
+  <property name="rows">524=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed"></property>
+  <property name="kdenlive:collapsed"></property>
+  <property name="rotation">524h=-181;535=-360</property>
+  <property name="distort">1</property>
+  <property name="rect">524h=-2880 -1620 7680 4320 1.000000;535=-1929 -1085 5779 3250 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed"></property>
+  <property name="vradius">524h=48;535=0</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">524h=48;535=0</property>
+ </effect>
+</effectgroup>

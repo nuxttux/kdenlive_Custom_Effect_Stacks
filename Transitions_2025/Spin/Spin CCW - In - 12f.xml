@@ -1,0 +1,22 @@
+<effectgroup description="Counter-Clockwise spin transition, IN - 12f" id="Spin CCW - In - 12f" parentIn="18">
+ <description>Counter-Clockwise spin transition, IN - 12f</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed"></property>
+  <property name="columns">18=0.105</property>
+  <property name="rows">18=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed"></property>
+  <property name="rotation">18g=0;29=-180</property>
+  <property name="distort">0</property>
+  <property name="rect">18g=-1923 -1082 5760 3240 1.000000;29=-2883 -1622 7680 4320 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed"></property>
+  <property name="vradius">18g=0;29=40</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">18g=0;29=40</property>
+ </effect>
+</effectgroup>
