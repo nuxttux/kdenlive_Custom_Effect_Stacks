@@ -1,0 +1,22 @@
+<effectgroup description="Top right scroll transition, OUT - 12 frames" id="Top Right Out - 12f" parentIn="524">
+ <description>Top right scroll transition, OUT - 12 frames</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="kdenlive:collapsed"></property>
+  <property name="columns">524=0.105</property>
+  <property name="rows">524=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="kdenlive:collapsed"></property>
+  <property name="rotation">524h=0;535=0</property>
+  <property name="distort">1</property>
+  <property name="rect">524h=0 -2160 5760 3240 1.000000;535=-3859 0 5779 3250 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="avfilter.dblur">
+  <property name="kdenlive:collapsed"></property>
+  <property name="av.planes">524$=15;535=15</property>
+  <property name="av.radius">524$=100;535=0</property>
+  <property name="av.angle">524$=135;535=135</property>
+ </effect>
+</effectgroup>

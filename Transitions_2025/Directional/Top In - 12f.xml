@@ -1,0 +1,19 @@
+<effectgroup description="Top scroll transition, IN - 12 frames" id="Top In - 12f" parentIn="18">
+ <description>Top scroll transition, IN - 12 frames</description>
+ <effect id="frei0r.cairoimagegrid">
+  <property name="columns">18=0.105</property>
+  <property name="rows">18=0.105</property>
+ </effect>
+ <effect id="qtblend">
+  <property name="rotation">18g=0;29=0</property>
+  <property name="distort">0</property>
+  <property name="rect">18g=-1923 -1080 5760 3240 1.000000;29=-1923 0 5760 3240 1.000000</property>
+  <property name="rotate_center">1</property>
+  <property name="compositing">0</property>
+ </effect>
+ <effect id="avfilter.dblur">
+  <property name="av.planes">18$=15;29=15</property>
+  <property name="av.radius">18$=0;29=100</property>
+  <property name="av.angle">18$=90;29=90</property>
+ </effect>
+</effectgroup>
