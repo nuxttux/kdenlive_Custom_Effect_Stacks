@@ -1,0 +1,6 @@
+<profiles version="1">
+ <profile args="acodec=pcm_s16le channels=2 f=mov pix_fmt=yuv422p10le preset=faster qscale=1 real_time=-4 threads=0 vcodec=prores_ks vprofile=3" category="Lossless/HQ" defaultaudiobitrate="0" defaultaudioquality="0" defaultbitrate="0" defaultquality="0" extension="mov" manual="1" name="ProRes 422 (HQ)"/>
+ <profile args="acodec=pcm_s16le channels=2 f=mov pix_fmt=yuv444p10le preset=faster qscale=1 real_time=-4 threads=0 vcodec=prores_ks vprofile=4" category="Lossless/HQ" defaultaudiobitrate="0" defaultaudioquality="0" defaultbitrate="0" defaultquality="0" manual="1" name="ProRes 4444"/>
+ <profile args="acodec=pcm_s16le channels=2 f=mov pix_fmt=yuv422p10le preset=faster real_time=-4 threads=0 vcodec=prores_ks vprofile=1" category="Lossless/HQ" defaultaudiobitrate="0" defaultaudioquality="0" defaultbitrate="0" defaultquality="0" manual="1" name="ProRes LT"/>
+ <profile args="acodec=pcm_s16le channels=2 f=mov pix_fmt=yuv422p8 preset=faster real_time=-4 threads=0 vcodec=prores_ks vprofile=1" category="Lossless/HQ" defaultaudiobitrate="0" defaultaudioquality="0" defaultbitrate="0" defaultquality="0" manual="1" name="ProRes LT 8bit"/>
+</profiles>
