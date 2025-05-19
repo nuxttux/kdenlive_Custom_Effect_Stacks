@@ -1,30 +1,28 @@
-<effectgroup description="Simple zoom in transition with lens distortion. Cut 8 frames to apply effect." id="Zoom In Transition 8f" parentIn="147">
- <description>Simple zoom in transition with lens distortion. Cut 8 frames to apply effect.</description>
+<effectgroup description="Simple zoom-in transition with lens distortion. Cut 8 frames from clip to apply effect." id="Zoom In Transition 8f" parentIn="2799">
+ <description>Simple zoom-in transition with lens distortion. Cut 8 frames from clip to apply effect.</description>
+ <effect id="box_blur">
+  <property name="kdenlive:collapsed">1</property>
+  <property name="vradius">2799h=0;2806=5</property>
+  <property name="preserve_alpha">0</property>
+  <property name="hradius">2799h=0;2806=5</property>
+ </effect>
  <effect id="pan_zoom">
   <property name="kdenlive:collapsed">1</property>
   <property name="transition.repeat_off">1</property>
   <property name="producer.resource">0x00000000</property>
   <property name="use_normalised">1</property>
   <property name="transition.distort">1</property>
-  <property name="kdenlive:collapsed">1</property>
+  <property name="kdenlive:collapsed"></property>
   <property name="transition.mirror_off">1</property>
-  <property name="transition.rect">147g=0 0 1920 1080;154=-2880 -1620 7680 4320</property>
+  <property name="transition.rect">2799g=0 0 1920 1080;2806=-2880 -1620 7680 4320</property>
  </effect>
  <effect id="frei0r.lenscorrection">
   <property name="kdenlive:collapsed">1</property>
-  <property name="brightness">147g=0;154=0</property>
-  <property name="kdenlive:collapsed">1</property>
-  <property name="correctionnearedges">147g=0.5;154=0.168</property>
-  <property name="correctionnearcenter">147g=0.5;154=0.413</property>
-  <property name="ycenter">147g=0.5;154=0.5</property>
-  <property name="xcenter">147g=0.5;154=0.5</property>
- </effect>
- <effect id="avfilter.gblur">
-  <property name="kdenlive:collapsed">1</property>
-  <property name="av.sigmaV">147g=0;154=20</property>
-  <property name="kdenlive:collapsed">1</property>
-  <property name="av.planes">7</property>
-  <property name="av.steps">2</property>
-  <property name="av.sigma">147g=0;154=20</property>
+  <property name="brightness">2799g=0;2806=0</property>
+  <property name="kdenlive:collapsed"></property>
+  <property name="correctionnearedges">2799g=0.5;2806=0.168</property>
+  <property name="correctionnearcenter">2799g=0.5;2806=0.413</property>
+  <property name="ycenter">2799g=0.5;2806=0.5</property>
+  <property name="xcenter">2799g=0.5;2806=0.5</property>
  </effect>
 </effectgroup>
